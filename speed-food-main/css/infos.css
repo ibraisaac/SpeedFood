@@ -1,0 +1,59 @@
+header {
+  background: url(../images/bg-image-foods-2.png);
+  object-fit: cover;
+}
+
+main .infos {
+  margin: 50px 25px;
+  border: 2px solid #333;
+  border-radius: 15px;
+}
+
+main .infos {
+  font: normal 400 20px/1.5 "Tajawal", sans-serif;
+  text-align: center;
+}
+
+main .infos p span {
+  font-weight: 700;
+}
+
+main .infos hr {
+  border: 1px solid #333;
+  margin: 25px 0;
+}
+
+main .infos #avl {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .infos #avl input {
+  background: #ff660037;
+  width: 16rem;
+  height: 2.5rem;
+  border: 2px solid #bc0000;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+main .infos #avl textarea {
+  background: #ff660037;
+  border: 2px solid #bc0000;
+  border-radius: 10px;
+  width: 16rem;
+  height: 8rem;
+  margin: 0 15px;
+  resize: none;
+}
+
+main .infos #avl button {
+  font-weight: bold;
+  border-color: #bc0000;
+}
+
+.hide {
+  display: none;
+}

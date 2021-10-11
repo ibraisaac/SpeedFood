@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--css-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/requests.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/infoUser.css" />
+    <link rel="shortcut icon" href="../images/icone.png" />
+    <title>Speed Food - Pedidos</title>
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="../images/logo.png" alt="Logo Speed Food" />
+    </header>
+
+    <main>
+      <nav id="menu-nav">
+        <ul id="nav">
+          <a onclick="addClass(event)" href="#">
+            <li class="active">Início</li>
+          </a>
+          <a onclick="addClass(event)" href="infos.html">
+            <li class="">Informações</li>
+          </a>
+          <a onclick="addClass(event)" href="work-with-us.html">
+            <li class="">Tabalhe Conosco</li>
+          </a>
+        </ul>
+      </nav>
+
+      <hr />
+
+      <div id="items"></div>
+
+      <button id="buttonCart" onclick="openCart()" class="image-button">
+        <img class="arrow" src="../images/bag-empty.svg" alt="Botão" />
+      </button>
+
+      <div id="cart">
+        <section id="prods-cart">
+          <div id="header">
+            <h1>Carrinho</h1>
+            <button onclick="closeCart()" id="closeCart">
+              <img src="../images/icon-x-close.svg" alt="Botão Fechar" />
+            </button>
+          </div>
+          <hr />
+
+          <div id="prods-cart-area"></div>
+        </section>
+      </div>
+
+      <div class="modal-info-user">
+        <div class="modal-info-user-centered">
+          <div class="modal-info-user-content">
+            <h2>
+              Informações para a entrega
+              <button id="closeCart">
+                <img
+                  onclick="delivery()"
+                  src="../images/icon-x-close.svg"
+                  alt="Botão Fechar"
+                />
+              </button>
+            </h2>
+            <label for="nome">
+              Nome:
+              <p>
+                <input type="text" name="nome" id="nome" required />
+              </p>
+            </label>
+
+            <label for="telefone">
+              Telefone:
+              <p>
+                <input type="text" name="telefone" id="telefone" required />
+              </p>
+            </label>
+
+            <label for="rua">
+              Rua:
+              <p>
+                <input type="text" name="rua" id="rua" required />
+              </p>
+            </label>
+
+            <label for="numero">
+              Número:
+              <p>
+                <input type="number" name="numero" id="numero" required />
+              </p>
+            </label>
+
+            <label for="bairro">
+              Bairro:
+              <p>
+                <input type="text" name="bairro" id="bairro" required />
+              </p>
+            </label>
+
+            <label for="complemento">
+              Complemento:
+              <p>
+                <input
+                  type="text"
+                  name="complemento"
+                  id="complemento"
+                  required
+                />
+              </p>
+            </label>
+            <button onclick="checkOut()" class="button">
+              Finalizar pedido!
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="finish">
+        <div id="loading">
+          <img id="img-loading" src="../images/loading.gif" alt="loading" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright&copy; - 2020</p>
+      <p>CNPJ - 000.000.000.00/000-0</p>
+    </footer>
+
+    <!--scripts-->
+    <script src="../script/menunav.js"></script>
+    <script src="../script/requests.js"></script>
+  </body>
+</html>
